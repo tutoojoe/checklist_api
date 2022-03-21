@@ -33,6 +33,5 @@ class UserRegisterSerializer(serializers.ModelSerializer):
             raise serializers.ValidationError({
                 'error':'passwords do not match'
             })
-
-
+        
         return super().create(validated_data)

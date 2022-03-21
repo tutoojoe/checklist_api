@@ -24,7 +24,6 @@ class RegisterAPIView(APIView):
                 'refresh': str(refresh),
                 'access': str(refresh.access_token),
                 'user': serializer.data,
-                
                 }
             # we are sending token instead of serialized data
             # serializer_data = serializer.data
